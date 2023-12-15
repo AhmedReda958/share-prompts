@@ -7,9 +7,8 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <span className="blue_gradient">{type} Post</span>
       </h1>
       <p className="desc text-left max-w-md">
-        {type}
-        and share amazing prompts with the world, and let your imagination run
-        wild with any AI-Powered Platfrom.
+        {type} and share amazing prompts with the world, and let your
+        imagination run wild with any AI-Powered Platfrom.
       </p>
       <form
         onSubmit={handleSubmit}
@@ -53,7 +52,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             disabled={submitting}
             className="px-5 py-1.5 text-sm bg-primary-orange text-white rounded-full"
           >
-            Create
+            {type}
           </button>
         </div>
       </form>
